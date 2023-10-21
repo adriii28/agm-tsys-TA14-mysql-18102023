@@ -3,13 +3,13 @@ CREATE DATABASE Ejercicio11TA14;
 USE Ejercicio11TA14;
 
 CREATE TABLE Facultad (
-codigo int,
+codigo int auto_increment,
 nombre nvarchar(100),
 PRIMARY KEY (codigo)
 );
 
 CREATE TABLE Investigadores (
-dni varchar(8),
+dni varchar(9),
 nom_apels nvarchar(255),
 codigo_facultad int,
 PRIMARY KEY (dni),
@@ -27,7 +27,7 @@ ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE Reserva (
-dni_investigador varchar(8),
+dni_investigador varchar(9),
 num_serie char(4),
 comienzo datetime,
 fin datetime,

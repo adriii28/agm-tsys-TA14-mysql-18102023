@@ -3,7 +3,7 @@ CREATE DATABASE Ejercicio8TA14;
 USE Ejercicio8TA14;
 
 CREATE TABLE Piezas (
-codigo int,
+codigo int auto_increment,
 nombre nvarchar(100),
 PRIMARY KEY (codigo)
 );

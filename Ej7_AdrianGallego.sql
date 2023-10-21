@@ -3,13 +3,13 @@ CREATE DATABASE Ejercicio7TA14;
 USE Ejercicio7TA14;
 
 CREATE TABLE Despachos (
-numero int,
+numero int auto_increment,
 capacidad int,
 PRIMARY KEY (numero)
 );
 
 CREATE TABLE Directores (
-dni varchar(8),
+dni varchar(9),
 nom_apels nvarchar(255),
 dni_jefe varchar(8),
 codigo_despacho int,

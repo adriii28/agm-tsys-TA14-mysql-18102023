@@ -3,20 +3,20 @@ CREATE DATABASE Ejercicio10TA14;
 USE Ejercicio10TA14;
 
 CREATE TABLE Cajeros (
-codigo int,
+codigo int auto_increment,
 nom_apels nvarchar(255),
 PRIMARY KEY (codigo)
 );
 
 CREATE TABLE Productos (
-codigo int,
+codigo int auto_increment,
 nombre nvarchar(100),
 precio int,
 PRIMARY KEY (codigo)
 );
 
 CREATE TABLE MaquinasRegistradoras (
-codigo int,
+codigo int auto_increment,
 piso int,
 PRIMARY KEY (codigo)
 );

@@ -3,7 +3,7 @@ CREATE DATABASE Ejercicio9TA14;
 USE Ejercicio9TA14;
 
 CREATE TABLE Cientificos (
-dni varchar(8),
+dni varchar(9),
 nom_apels nvarchar(255),
 PRIMARY KEY (dni)
 );
@@ -16,7 +16,7 @@ PRIMARY KEY (id)
 );
 
 CREATE TABLE AsignadoA (
-cientifico varchar(8),
+cientifico varchar(9),
 proyecto char(4),
 PRIMARY KEY (cientifico, proyecto),
 FOREIGN KEY (cientifico) REFERENCES Cientificos(dni)
